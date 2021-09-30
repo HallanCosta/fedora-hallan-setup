@@ -40,7 +40,7 @@ flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 
 flatpak install -y flathub com.bitwarden.desktop"
 
-# Docker Desktop Icon
+# Create Docker Desktop Icon
 mkdir /usr/share/docker && mkdir /usr/share/docker/icons && cd /usr/share/docker/icons &&
 curl https://user-images.githubusercontent.com/60573155/135366543-253fd98f-76e9-4f4c-bcb8-b94ea72c16cc.png > docker.png &&
 cat > /usr/share/applications/docker.desktop <<EOF
@@ -57,25 +57,20 @@ EOF
 
 &&
 
-# Adicionando Theme macOS BigSur
-
-mkdir --if-not-exists ~/.themes && 
-
+# Add Theme macOS BigSur
+mkdir -p ~/.themes && 
+cd themes && 
+cp WhiteSur-dark.tar.xz ~/.themes &&
 cd ~/.themes &&
-
-curl https://dl2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MzI0ODczNzkiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjFmNTA4ZTdkNzU2NTI3YjJmNGQ4ZDA4YTFhZTNhOGJjZjczMzcwMTQzNDczYzlkMjEyZGRhNDI5MWYwZGYyODFjMDk5M2RkYzlhNWVlOTcyYmQ2MDg3YjllNGM4NjU3ZjcwNjYyYzIwNzZlYWRlMDcwYzQ0NjEwMTgwMDNkMTRjIiwidCI6MTYzMjk2ODQxOCwic3RmcCI6IjlkZjQ1Y2NkMWY1YTk4YzIyOGJlYzE3OWFiYmJmMjYzIiwic3RpcCI6IjE4Ny4xMjAuMTQ4LjE5OCJ9.SwT0Rm7Z6mOT4hcKKWki8gaNPWpMhVPkSNOBIPZNU_M/WhiteSur-dark.tar.xz > WhiteSur-dark.tar.xz &&
-
 tar -xvf WhiteSur-dark.tar.xz &&
-
 rm -rf WhiteSur-dark.tar.xz  && 
 
-# Adicionando Icons macOS BigSur
-mkdir --if-not-exists ~/.icons && 
-
-curl https://dl1.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE2MTk1MDg2MjUiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6IjM3ODQ3Nzg5NjI1MjM0YWE3OWM5NTg0ZGVkMDZjNTVhNTMzZWM2ZTg5MjBlYjYyNzkzMTA4YzA0ZjJlMDcxMDIxMmM1ZTZjMGQxMzUyMTY1YmJmY2Y1ZjMwMzMwYWRiMTJiMjdiNThhZTdlNTA3YTU4YzgyOTUwMjI5OGZmNzI2IiwidCI6MTYzMjk2OTUwMywic3RmcCI6IjlkZjQ1Y2NkMWY1YTk4YzIyOGJlYzE3OWFiYmJmMjYzIiwic3RpcCI6IjE4Ny4xMjAuMTQ4LjE5OCJ9.eJx-SsDBzvZmyGkRO4S2oisnJJ96qBOTmlNvTVLOHsw/BigSur-Originals-Prime.tar.xz > BigSur-Originals-Prime.tar.xz &&
-
+# Add Icons theme macOS BigSur
+mkdir -p ~/.icons && 
+cd icons &&
+cp BigSur-Originals-Prime.tar.xz ~/.icons &&
+cd ~/.icons &&
 tar -xvf BigSur-Originals-Prime.tar.xz &&
-
 rm -rf BigSur-Originals-Prime.tar.xz  && 
 
 
