@@ -6,6 +6,8 @@ dnf remove -y adwaita-qt5 totem epiphany evolution lohit-assamese-fonts lohit-be
 
 dnf install -y fedora-workstation-repositories https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm &&
 
+dnf -y install dnf-plugins-core &&
+
 dnf config-manager --set-enabled rpmfusion-free &&
 
 dnf config-manager --set-enabled rpmfusion-free-updates &&
@@ -16,9 +18,7 @@ dnf config-manager --set-enabled rpmfusion-nonfree-updates &&
 
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo &&
 
-dnf makecache &&
-
-dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en hunspell-pt-br wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce gnome-tweaks &&
+dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en hunspell-pt-br wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks &&
 
 dnf update -y &&
 
