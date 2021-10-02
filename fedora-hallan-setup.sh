@@ -45,11 +45,12 @@ flatpak install -y flathub com.bitwarden.desktop"
 # Active Keyboard LED
 sudo cp /etc/gdm/custom.conf /etc/gdm/custom-backup.conf &&
 sudo sed "s/WaylandEnable=false/WaylandEnable=true/g" /etc/gdm/custom.conf && 
-sudo mkdir -p /usr/share/xset &&
-sudo mkdir -p /usr/share/xset/icons &&
-sudo cp desktop/xset/xset.png /usr/share/xset/icons &&
-sudo cp desktop/xset/xset.desktop /usr/share/applications &&
-
+sudo mkdir -p /usr/share/keyboard-lights &&
+sudo mkdir -p /usr/share/keyboard-lights/icons &&
+sudo cp desktop/keyboard-lights/keyboard-lights.png /usr/share/keyboard-lights/icons &&
+sudo cp desktop/keyboard-lights/keyboard-lights.desktop /usr/share/applications &&
+sudo cp scripts/keyboard-lights /usr/bin &&
+sudo chmod +x /usr/bin/keyboard-lights &&
 
 # Create Docker Desktop Icon
 sudo mkdir -p /usr/share/docker && 
