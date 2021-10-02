@@ -18,7 +18,7 @@ dnf config-manager --set-enabled rpmfusion-nonfree-updates &&
 
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo &&
 
-dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks &&
+dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks luajit &&
 
 dnf update -y &&
 
