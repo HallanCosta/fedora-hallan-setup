@@ -36,6 +36,8 @@ flatpak install -y flathub com.microsoft.Teams &&
 
 flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 
+flatpak install -y --user https://flathub.org/repo/appstream/app.ytmdesktop.ytmdesktop.flatpakref
+
 flatpak install -y flathub com.bitwarden.desktop"
 
 # Active Keyboard LED
