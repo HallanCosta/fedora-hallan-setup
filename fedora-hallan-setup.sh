@@ -98,3 +98,4 @@ gsettings set org.gnome.shell.extensions.dash-to-dock icon-size-fixed true
 gsettings set org.gnome.shell.extensions.dash-to-dock show-trash false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false
 /usr/bin/canberra-gtk-play --id="desktop-login" --description="GNOME Login"
+read -n1 -r -p "Instalações e Configurações finalizadas. Pressione enter para finalizar e reinicar o computador!!" key
