@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Keyboard Lights
+GenericName=Keyboard Lights
+Comment=Ativa os led do teclado na inicialização
+Exec=keyboard-lights
+Icon=/usr/share/keyboard-lights/icons/keyboard-lights.png
+Terminal=true
+Type=Application
+X-GNOME-Autostart-enabled=true
