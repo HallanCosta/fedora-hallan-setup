@@ -6,6 +6,8 @@ dnf remove -y adwaita-qt5 totem epiphany evolution lohit-assamese-fonts lohit-be
 
 dnf install -y fedora-workstation-repositories https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm &&
 
+dnf --enablerepo=updates-testing install xorg-x11-server-utils &&
+
 dnf -y install dnf-plugins-core &&
 
 dnf config-manager --set-enabled rpmfusion-free &&
@@ -41,8 +43,13 @@ flatpak install -y --user https://flathub.org/repo/appstream/app.ytmdesktop.ytmd
 flatpak install -y flathub com.bitwarden.desktop"
 
 # Active Keyboard LED
-sudo cp /etc/gdm/custom.conf /etc/gdm/custom-backup.conf
-sudo sed "s/WaylandEnable=false/WaylandEnable=true/g" /etc/gdm/custom.conf 
+sudo cp /etc/gdm/custom.conf /etc/gdm/custom-backup.conf &&
+sudo sed "s/WaylandEnable=false/WaylandEnable=true/g" /etc/gdm/custom.conf && 
+sudo mkdir -p /usr/share/xset &&
+sudo mkdir -p /usr/share/xset/icons &&
+sudo cp desktop/xset/xset.png /usr/share/xset/icons &&
+sudo cp desktop/xset/xset.desktop /usr/share/applications &&
+
 
 # Create Docker Desktop Icon
 sudo mkdir -p /usr/share/docker && 
