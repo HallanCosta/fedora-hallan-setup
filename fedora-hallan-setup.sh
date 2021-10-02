@@ -64,14 +64,10 @@ tar -xvf WhiteSur-dark.tar.xz &&
 rm -rf WhiteSur-dark.tar.xz  && 
 
 # Add Icons theme macOS BigSur
-mkdir -p ~/.icons && 
-cd icons &&
-cp BigSur-Originals-Prime.tar.xz ~/.icons &&
-cd ~/.icons &&
-tar -xvf BigSur-Originals-Prime.tar.xz &&
-rm -rf BigSur-Originals-Prime.tar.xz  && 
-
-
+sudo mkdir -p ~/.icons && 
+sudo cp icons/BigSur-Originals-Prime.tar.xz ~/.icons &&
+sudo tar -xvf ~/.icons/BigSur-Originals-Prime.tar.xz -C ~/.icons &&
+sudo rm -rf ~/.icons/BigSur-Originals-Prime.tar.xz && 
 
 cd ~/.cache
 mkdir wget
