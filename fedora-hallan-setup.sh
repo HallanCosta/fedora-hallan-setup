@@ -38,6 +38,10 @@ flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 
 flatpak install -y flathub com.bitwarden.desktop"
 
+# Active Keyboard LED
+sudo cp /etc/gdm/custom.conf /etc/gdm/custom-backup.conf
+sudo sed "s/WaylandEnable=false/WaylandEnable=true/g" /etc/gdm/custom.conf 
+
 # Create Docker Desktop Icon
 sudo mkdir -p /usr/share/docker && 
 sudo mkdir -p /usr/share/docker/icons && 
