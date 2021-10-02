@@ -39,9 +39,11 @@ flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 flatpak install -y flathub com.bitwarden.desktop"
 
 # Create Docker Desktop Icon
-mkdir /usr/share/docker && mkdir /usr/share/docker/icons && cd /usr/share/docker/icons &&
-curl https://user-images.githubusercontent.com/60573155/135366543-253fd98f-76e9-4f4c-bcb8-b94ea72c16cc.png > docker.png &&
-cat > /usr/share/applications/docker.desktop <<EOF
+sudo mkdir -p /usr/share/docker && 
+sudo mkdir -p /usr/share/docker/icons && 
+sudo curl https://user-images.githubusercontent.com/60573155/135366543-253fd98f-76e9-4f4c-bcb8-b94ea72c16cc.png > docker.png &&
+sudo mv docker.png /usr/share/docker/icons
+sudo cat > docker.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=Docker
@@ -52,8 +54,7 @@ Exec=sudo systemctl enable docker.service
 Icon=/usr/share/docker/icons/docker.png
 StartupNotify=true
 EOF
-
-&&
+sudo mv docker.desktop /usr/share/applications/
 
 # Add Theme macOS BigSur
 sudo mkdir -p ~/.themes && 
