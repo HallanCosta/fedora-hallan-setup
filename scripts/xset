@@ -1,0 +1,17 @@
+#!/usr/bin/luajit
+
+io.write("\n")
+io.write("1 - Ativar LED", "\n")
+io.write("2 - Desativar LED", "\n\n")
+io.write("Escolha: ")
+local led = io.read(1)
+ 
+if led == "1" then
+  print("LED DO TECLADO ATIVADO")
+  os.execute("xset led 3")
+else 
+  print("LED DO TECLADO DESATIVADO")
+  os.execute("xset -led 3")
+end
+
+
