@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Xset
+GenericName=Xset
+Comment=Ativa os led do teclado na inicialização
+Exec=xset led 3
+Terminal=true
+Type=Application
+X-GNOME-Autostart-enabled=true
