@@ -56,12 +56,10 @@ EOF
 &&
 
 # Add Theme macOS BigSur
-mkdir -p ~/.themes && 
-cd themes && 
-cp WhiteSur-dark.tar.xz ~/.themes &&
-cd ~/.themes &&
-tar -xvf WhiteSur-dark.tar.xz &&
-rm -rf WhiteSur-dark.tar.xz  && 
+sudo mkdir -p ~/.themes && 
+sudo cp themes/WhiteSur-dark.tar.xz ~/.themes &&
+sudo tar -xvf ~/.themes/WhiteSur-dark.tar.xz -C ~/.themes &&
+sudo rm -rf ~/.themes/WhiteSur-dark.tar.xz && 
 
 # Add Icons theme macOS BigSur
 sudo mkdir -p ~/.icons && 
