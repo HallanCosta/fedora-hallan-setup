@@ -8,6 +8,10 @@ dnf install -y fedora-workstation-repositories https://mirrors.rpmfusion.org/fre
 
 dnf --enablerepo=updates-testing install xorg-x11-server-utils &&
 
+rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub &&
+
+wget -P /etc/yum.repos.d https://repo.vivaldi.com/archive/vivaldi-fedora.repo
+
 dnf -y install dnf-plugins-core &&
 
 dnf config-manager --set-enabled rpmfusion-free &&
@@ -20,7 +24,7 @@ dnf config-manager --set-enabled rpmfusion-nonfree-updates &&
 
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo &&
 
-dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks luajit xset &&
+dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks luajit xset vivaldi-stable &&
 
 dnf update -y &&
 
@@ -38,7 +42,13 @@ flatpak install -y flathub com.microsoft.Teams &&
 
 flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 
-flatpak install -y --user https://flathub.org/repo/appstream/app.ytmdesktop.ytmdesktop.flatpakref
+flatpak install -y --user https://flathub.org/repo/appstream/app.ytmdesktop.ytmdesktop.flatpakref &&
+
+flatpak install flathub org.mozilla.Thunderbird &&
+
+flatpak install flathub rest.insomnia.Insomnia &&
+
+flatpak install flathub com.discordapp.Discord &&
 
 flatpak install -y flathub com.bitwarden.desktop"
 
