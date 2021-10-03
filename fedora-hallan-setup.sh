@@ -8,10 +8,6 @@ dnf install -y fedora-workstation-repositories https://mirrors.rpmfusion.org/fre
 
 dnf --enablerepo=updates-testing install xorg-x11-server-utils &&
 
-rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub &&
-
-wget -P /etc/yum.repos.d https://repo.vivaldi.com/archive/vivaldi-fedora.repo
-
 dnf -y install dnf-plugins-core &&
 
 dnf config-manager --set-enabled rpmfusion-free &&
@@ -24,7 +20,15 @@ dnf config-manager --set-enabled rpmfusion-nonfree-updates &&
 
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo &&
 
-dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl nodejs npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks luajit xset vivaldi-stable &&
+rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub &&
+
+wget -P /etc/yum.repos.d https://repo.vivaldi.com/archive/vivaldi-fedora.repo &&
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash &&
+
+nvm install v16 &&
+
+dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-no-overview rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data simplescreenrecorder yaru-theme gnome-extensions-app x264 x265 python python2 python3 make cmake automake autoconf gcc g++ adb procyon-decompiler gnupg hunspell-en wget git evince-nautilus brasero-nautilus gtkhash-nautilus nautilus-image-converter gvfs-mtp perl openssl npm nautilus-extensions docker-ce docker-ce-cli containerd.io gnome-tweaks luajit xset vivaldi-stable &&
 
 dnf update -y &&
 
