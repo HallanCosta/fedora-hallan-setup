@@ -65,6 +65,8 @@ sudo cp desktop/keyboard-lights/keyboard-lights.png /usr/share/keyboard-lights/i
 sudo cp desktop/keyboard-lights/keyboard-lights.desktop /usr/share/applications &&
 sudo cp scripts/keyboard-lights /usr/bin &&
 sudo chmod +x /usr/bin/keyboard-lights &&
+sudo cp desktop/keyboard-lights/keyboard-lights.desktop /home/hallancosta/.config/autostart/
+sudo sed "s/Exec=keyboard-lights/Exec=xset led 3/g" /home/hallancosta/.config/autostart/keyboard_led.desktop && 
 
 # Create Docker Desktop Icon
 sudo mkdir -p /usr/share/docker && 
