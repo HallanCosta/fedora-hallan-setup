@@ -134,8 +134,14 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 0.95
 
 /usr/bin/canberra-gtk-play --id="desktop-login" --description="GNOME Login"
 
+
+
 sh -x xdg-open https://extensions.gnome.org/extension/2950/compiz-alike-windows-effect/ >&/tmp/errors
 
 read -n1 -r -p "Instale e ative Wobbly Effect, pressione enter quando ativar" key
+
+sh -x xdg-open https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/ >&/tmp/errors
+
+read -n1 -r -p "Instale e ative Lamp Effect, pressione enter quando ativar" key
 
 read -n1 -r -p "Instalações e Configurações finalizadas. Pressione enter para finalizar e reinicar o computador!!" key
