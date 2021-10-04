@@ -26,7 +26,7 @@ wget -P /etc/yum.repos.d https://repo.vivaldi.com/archive/vivaldi-fedora.repo &&
 
 
 # NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash &&
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash &&
 
 source ~/.nvm/nvm.sh &&
 
