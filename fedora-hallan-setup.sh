@@ -115,7 +115,7 @@ rm -fr ~/.cache
 gsettings set org.gnome.desktop.interface gtk-theme WhiteSur-dark
 gsettings set org.gnome.desktop.sound theme-name Yaru
 gsettings set org.gnome.desktop.interface icon-theme BigSur-Originals-Prime-dark
-gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu,minimize,maximize,close:"
+gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu,close,minimize,maximize:"
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 gsettings set org.gnome.shell enabled-extensions "['dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'no-overview@fthx', 'gsconnect@andyholmes.github.io']"
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-overview'
