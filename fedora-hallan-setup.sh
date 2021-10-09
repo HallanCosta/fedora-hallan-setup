@@ -148,3 +148,5 @@ sh -x xdg-open https://extensions.gnome.org/extension/3740/compiz-alike-magic-la
 read -n1 -r -p "Instale e ative Lamp Effect, pressione enter quando ativar" key
 
 read -n1 -r -p "Instalações e Configurações finalizadas. Pressione enter para finalizar e reinicar o computador!!" key
+
+sudo reboot
