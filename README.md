@@ -29,3 +29,8 @@
 5 - Procure: `Mover a janela um espaço de trabalho à esquerda` e coloque a tecla `Alt + Seta para esquerda`
 
 6 - Em: `Trocar para o espaço de trabalho 1` coloque a tecla `Alt + 1` (do teclado numérico localizado a esquerda). Faça  a mesma coisa para os espaços de trabalhos 2, 3 e 4
+
+# Configurações de atalhos (Janelas)
+1 - Na configuração dos atalhos de Janelas procure: `Maximizar a janela` e coloque a tecla `Super + Seta para cima`
+
+2 - Acredito que `Minimizar a janela` vem por padrão `Super + Seta para baixo`, se não vir troque-a
