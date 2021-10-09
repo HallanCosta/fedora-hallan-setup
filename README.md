@@ -14,4 +14,18 @@
 
 6 - Desative as pesquisas de aplicativos em Configurações > Pesquisa
 
-### Pronto!! Fedora 34 configurado 
+7 -  Pronto!! Fedora 34 configurado 
+
+
+# Configurações de atalhos
+1 - Vai em Configurações > Teclado > Personalizar atalho (do aba no final)
+
+2 - Nos atalhos de navegação, procure: `Move para o espaço de trabalho à esquerda` e coloque a tecla Super + Seta para esquerda
+
+3 - Nos atalhos de navegação, procure: `Move para o espaço de trabalho à direita` e coloque a tecla Super + Seta para direita
+
+4 - Procure: `Mover a janela um espaço de trabalho à direita` e coloque a tecla `Alt + Seta para direita`
+
+5 - Procure: `Mover a janela um espaço de trabalho à esquerda` e coloque a tecla `Alt + Seta para esquerda`
+
+6 - Em: `Trocar para o espaço de trabalho 1` coloque a tecla `Alt + 1` (do teclado numérico localizado a esquerda). Faça  a mesma coisa para os espaços de trabalhos 2, 3 e 4
