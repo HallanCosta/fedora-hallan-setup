@@ -20,6 +20,7 @@ dnf config-manager --set-enabled rpmfusion-nonfree-updates &&
 
 dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo &&
 
+# Vivaldi
 rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub &&
 
 wget -P /etc/yum.repos.d https://repo.vivaldi.com/archive/vivaldi-fedora.repo &&
