@@ -55,13 +55,13 @@ flatpak install -y flathub com.microsoft.Teams &&
 
 flatpak install -y flathub org.gnome.gitlab.somas.Apostrophe &&
 
-flatpak install -y --user https://flathub.org/repo/appstream/app.ytmdesktop.ytmdesktop.flatpakref &&
+flatpak install -y flathub app.ytmdesktop.ytmdesktop &&
 
-flatpak install flathub org.mozilla.Thunderbird &&
+flatpak install -y flathub org.mozilla.Thunderbird &&
 
-flatpak install flathub rest.insomnia.Insomnia &&
+flatpak install -y flathub rest.insomnia.Insomnia &&
 
-flatpak install flathub com.discordapp.Discord &&
+flatpak install -y flathub com.discordapp.Discord &&
 
 flatpak install -y flathub com.bitwarden.desktop"
 
@@ -77,7 +77,7 @@ sudo chmod +x /usr/bin/keyboard-lights &&
 sudo mkdir -p /home/hallancosta/.config/autostart/
 sudo cp desktop/keyboard-lights/keyboard-lights.desktop /home/hallancosta/.config/autostart/
 sudo sed "s/Exec=keyboard-lights/Exec=xset led 3/g" /home/hallancosta/.config/autostart/keyboard-lights.desktop && 
-
+exit
 # Create Docker Desktop Icon
 sudo mkdir -p /usr/share/docker && 
 sudo mkdir -p /usr/share/docker/icons && 
