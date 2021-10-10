@@ -33,3 +33,10 @@
 1 - Na configuração dos atalhos de Janelas procure: `Maximizar a janela` e coloque a tecla `Super + Seta para cima`
 
 2 - Acredito que `Minimizar a janela` vem por padrão `Super + Seta para baixo`, se não vir troque-a
+
+# Como desativar a camera
+Abra o terminal e execute um dos comando abaixo:
+
+Desativar: `sudo modprobe -r uvcvideo`
+Ativar: `sudo modprobe uvcvideo`
+
