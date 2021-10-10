@@ -3,8 +3,7 @@
 
 1 - Dentro da loja de aplicativos baixe o `Gnome Tweeks` ou `Ajustes do Gnome`
 
-2 - No diretório da pasta Downloads execute: 
-`git clone https://github.com/HallanCosta/fedora-hallan-setup.git`
+2 - Abra o terminal e no diretório da pasta Downloads baixe ou execute o comando: `git clone https://github.com/HallanCosta/fedora-hallan-setup.git`
 
 3 - Entre na pasta com comando:  `cd fedora-hallan-setup-main`
 
