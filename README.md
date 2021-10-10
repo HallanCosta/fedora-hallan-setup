@@ -40,3 +40,5 @@ Abra o terminal e execute um dos comando abaixo:
 Desativar: `sudo modprobe -r uvcvideo`
 Ativar: `sudo modprobe uvcvideo`
 
+# Observações
+Não se esqueça de quando desligar o computador, iniciar com o gnome xOrg
