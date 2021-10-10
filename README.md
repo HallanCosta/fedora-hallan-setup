@@ -40,5 +40,9 @@ Abra o terminal e execute um dos comando abaixo:
 Desativar: `sudo modprobe -r uvcvideo`
 Ativar: `sudo modprobe uvcvideo`
 
+
+# Como instalar LAMP
+[Acesse esse link para ver as instruções](https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/)
+
 # Observações
 Não se esqueça de quando desligar o computador, iniciar com o gnome xOrg
