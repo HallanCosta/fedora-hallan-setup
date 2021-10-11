@@ -42,7 +42,10 @@ Ativar: `sudo modprobe uvcvideo`
 
 
 # Como instalar LAMP
-[Acesse esse link para ver as instruções](https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/)
+[Como instalar lamp](https://computingforgeeks.com/how-to-install-lamp-stack-on-fedora/)
+
+[Como instalar phpmyadmin](https://computingforgeeks.com/install-phpmyadmin-on-kali-linux/)
+
 
 # Observações
 Não se esqueça de quando desligar o computador, iniciar com o gnome xOrg
